@@ -19,6 +19,12 @@ module.exports = {
       fontFamily: {
         inter: "Inter",
       },
+      padding: {
+        "wrapper-lg": "80px",
+      },
+      height: {
+        "screen-wrapper": "calc(100vh - 80px - 40px)"
+      }
     },
   },
   plugins: [],

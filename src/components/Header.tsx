@@ -4,7 +4,7 @@ import instagram from "../assets/images/instagram.svg";
 
 export const Header: FC = () => {
   return (
-    <header className="max-h-[48px] flex justify-between items-center">
+    <header className="sticky top-[10px] max-h-[40px] flex justify-between items-center flex-1">
       <h1 className="font-bold uppercase text-[40px]">
         <b className="text-primary">2</b> bro
       </h1>
