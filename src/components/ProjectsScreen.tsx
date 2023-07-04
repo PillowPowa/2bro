@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import { Paragraph } from "./ui/Paragraph";
+import { HeadingWithDesc } from "./ui/HeadingWithDesc";
 
 import reitarImg from "../assets/images/projects/1.png";
 import dragomirovaImg from "../assets/images/projects/2.png";
@@ -27,13 +28,9 @@ export const ProjectsScreen: FC = () => {
     <section className="py-[64px]">
       <Paragraph>Our pride</Paragraph>
 
-      <div className="flex space-x-8 items-center my-[40px]">
-        <h2 className="text-[120px] text-black lowercase">Projects</h2>
-
-        <span className="max-h-[120px] w-[300px] text-gray lowercase text-left">
-          We are proud of our projects, so we invite you to take a look at them
-        </span>
-      </div>
+      <HeadingWithDesc heading="Our pride">
+        We are proud of our projects, so we invite you to take a look at them
+      </HeadingWithDesc>
 
       <article className="flex flex-col space-y-[100px]">
         {PROJECTS.map((project, index) => (
