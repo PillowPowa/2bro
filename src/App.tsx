@@ -1,4 +1,5 @@
 import { AboutUsScreen } from './components/AboutUsScreen'
+import { BenefitsScreen } from './components/BenefitsScreen'
 import { Header } from './components/Header'
 import { ProjectsScreen } from './components/ProjectsScreen'
 import { WelcomeScreen } from './components/WelcomeScreen'
@@ -10,6 +11,7 @@ function App() {
       <WelcomeScreen />
       <AboutUsScreen />
       <ProjectsScreen />
+      <BenefitsScreen />
     </main>
   )
 }

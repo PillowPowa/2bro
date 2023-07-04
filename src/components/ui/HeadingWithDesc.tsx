@@ -12,7 +12,7 @@ export const HeadingWithDesc: FC<PropsWithChildren<HeadingWithDescProps>> = ({
     ...props
 }) => {
   return (
-    <div className={cn("flex space-x-8 items-center my-[40px]", className)} {...props}>
+    <div className={cn("flex justify-between items-center my-[40px]", className)} {...props}>
       <h2 className="text-[120px] text-black lowercase">{heading}</h2>
 
       <span className="max-h-[120px] w-[300px] text-gray lowercase text-left">

@@ -15,6 +15,7 @@ module.exports = {
         primary: "#E4371E",
         gray: "#D9D9D9",
         black: "#202020",
+        "gray-rgba": "rgba(32, 32, 32, 0.05);"
       },
       fontFamily: {
         inter: "Inter",
