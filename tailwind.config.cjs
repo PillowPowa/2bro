@@ -25,7 +25,10 @@ module.exports = {
       },
       height: {
         "screen-wrapper": "calc(100vh - 80px - 40px)"
-      }
+      },
+      flex: {
+        "card": "1 0 360px",
+      },
     },
   },
   plugins: [],
