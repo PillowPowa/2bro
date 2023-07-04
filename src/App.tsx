@@ -1,5 +1,6 @@
 import { AboutUsScreen } from './components/AboutUsScreen'
 import { Header } from './components/Header'
+import { ProjectsScreen } from './components/ProjectsScreen'
 import { WelcomeScreen } from './components/WelcomeScreen'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <WelcomeScreen />
       <AboutUsScreen />
+      <ProjectsScreen />
     </main>
   )
 }
