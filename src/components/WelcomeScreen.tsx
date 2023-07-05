@@ -13,9 +13,9 @@ export const WelcomeScreen: FC = () => {
 	return (
 		<section className="sm:py-[64px] sm:h-screen-wrapper">
 			<article className="flex flex-col justify-between gap-4 h-full z-10 relative">
-				<Paragraph>Design Buro</Paragraph>
+				<Paragraph>Design Bureau</Paragraph>
 
-				<Heading size="base" className="max-w-[880px] shrink-0 heading-[110%] sm:my-[40px] text-left">
+				<Heading size="base" className="max-w-[880px] shrink-0 leading-3 sm:my-[40px] text-left">
 					The interior of your dreams is already here!
 				</Heading>
 

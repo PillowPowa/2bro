@@ -8,7 +8,7 @@ export const AboutUsScreen: FC = () => {
   return (
     <section id="about-us" className="flex justify-between pt-[64px] relative sm:static">
       <article className="z-10">
-        <Paragraph>Facts about buro</Paragraph>
+        <Paragraph>Facts about bureau</Paragraph>
         <Heading className="my-4 sm:my-[40px] text-center sm:text-left">
           About Us
         </Heading>

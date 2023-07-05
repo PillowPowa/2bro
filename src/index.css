@@ -4,6 +4,9 @@
 
 @layer base {
   * {
-    @apply font-inter;
+    @apply font-inter selection:text-white selection:bg-primary-rgba selection:opacity-80 scroll-smooth;
+  }
+  img {
+    @apply select-none
   }
 }
