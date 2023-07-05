@@ -9,7 +9,7 @@ import { WelcomeScreen } from './components/WelcomeScreen'
 
 function App() {
   return (
-    <main className="px-[270px] pt-wrapper-lg bg-white">
+    <main className="px-4 md:px-[100px] xl:px-[270px] pt-0 sm:pt-wrapper-lg bg-white">
       <Header />
       
       <WelcomeScreen />

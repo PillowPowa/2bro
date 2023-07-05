@@ -5,7 +5,7 @@ import * as imgs from "../assets/images/clients";
 
 export const ClientsScreen: FC = () => {
   return (
-    <section className="py-[64px]">
+    <section className="pt-[128px]">
       <Paragraph>Why us?</Paragraph>
 
       <HeadingWithDesc heading="Clients">
@@ -16,7 +16,7 @@ export const ClientsScreen: FC = () => {
       <figure className="flex flex-wrap gap-8">
         {Object.values(imgs).map((imgSrc, index) => (
           <img
-            className="flex-card hover-scale-[1.01] transition-all"
+            className="w-full sm:flex-card hover-scale-[1.01] transition-all"
             key={index}
             src={imgSrc}
             alt={`Image ${index}`}
