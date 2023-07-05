@@ -17,6 +17,7 @@ export const ClientsScreen: FC = () => {
         {Object.values(imgs).map((imgSrc, index) => (
           <img
             className="w-full sm:flex-card hover-scale-[1.01] transition-all"
+            loading="lazy"
             key={index}
             src={imgSrc}
             alt={`Image ${index}`}

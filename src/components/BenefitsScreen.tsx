@@ -18,6 +18,7 @@ export const BenefitsScreen: FC = () => {
 
       <img
         className="left-0 w-auto md:w-[670px] h-[460px] object-cover object-top"
+        loading="lazy"
         src={mainImg}
         alt="Benefits Image"
       />
@@ -29,7 +30,7 @@ export const BenefitsScreen: FC = () => {
       )}>
         <section className="flex flex-col justify-between text-black">
           <div className="p-4 bg-black w-fit">
-            <img src={detailsImg} alt="Details" />
+            <img src={detailsImg} loading="lazy" alt="Details" />
           </div>
           <h2 className="my-2 text-sm sm:text-base">Guarantee for projects</h2>
           <span className="sm:max-w-[240px] text-xs sm:text-sm">
@@ -40,7 +41,7 @@ export const BenefitsScreen: FC = () => {
 
         <section className="flex flex-col justify-between sm:ml-auto lg:ml-0 text-black">
           <div className="p-4 bg-black w-fit">
-            <img src={detailsImg} alt="Details" />
+            <img src={detailsImg} loading="lazy" alt="Details" />
           </div>
           <h2 className="my-2 text-sm sm:text-base">Verification of contractors</h2>
           <span className="sm:max-w-[240px] text-xs sm:text-sm">

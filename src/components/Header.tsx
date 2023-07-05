@@ -30,10 +30,10 @@ export const Header: FC = () => {
 
       <section className="flex space-x-4 sm:space-x-[60px]">
         <div className="p-2 bg-primary">
-          <img src={behance} alt="Behance" />
+          <img src={behance} loading="eager" alt="Behance" />
         </div>
         <div className="p-2 bg-primary">
-          <img src={instagram} alt="Instagram" />
+          <img src={instagram} loading="eager" alt="Instagram" />
         </div>
       </section>
     </header>

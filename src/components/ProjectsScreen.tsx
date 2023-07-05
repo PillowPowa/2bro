@@ -41,6 +41,7 @@ export const ProjectsScreen: FC = () => {
             <p className="mb-0.5 text-gray md:text-black uppercase">{project.name}</p>
             <img
               className="absolute right-0 w-full md:w-[970px] h-[180px] sm:h-[360px] -z-10 object-cover object-top"
+              loading="lazy"
               src={project.src}
               alt="Project Image"
             />
@@ -50,6 +51,7 @@ export const ProjectsScreen: FC = () => {
 
       <img
         className="absolute right-0 opacity-60 -translate-y-[50%]"
+        loading="lazy"
         src={projectsImg}
         alt="Project"
       />

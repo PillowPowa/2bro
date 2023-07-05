@@ -16,12 +16,12 @@ export const Footer = () => {
 
         <span className="max-h-[120px] w-full sm:w-[280px] lowercase text-left flex flex-row justify-between sm:flex-col gap-2 py-4">
           <div className="flex items-center gap-2 sm:gap-8">
-            <img src={location} alt="Loaction" />
+            <img src={location} loading="eager" alt="Loaction" />
             <p className="text-gray text-sm sm:text-base">info@2bro.com</p>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-8">
-            <img src={mail} alt="Mail" />
+            <img src={mail} loading="eager" alt="Mail" />
             <p className="text-gray text-sm sm:text-base">Kyiv / Reitarska 13</p>
           </div>
         </span>

@@ -39,6 +39,7 @@ export const ExecutorsScreen: FC = () => {
           <figure key={person.name} className="w-full sm:w-[300px]">
             <img
               className="w-full h-auto"
+              loading="lazy"
               src={person.avatarURL}
               alt="Executor Image"
             />

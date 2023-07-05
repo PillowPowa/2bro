@@ -21,12 +21,12 @@ export const WelcomeScreen: FC = () => {
 
 				<figure className="sm:absolute top-0 right-0 h-full w-full flex gap-4 sm:items-end sm:justify-end -z-10">
 					<section className="hidden sm:flex flex-col space-y-4">
-						<img className="w-[260px] h-[360px] object-top object-cover" src={first} alt="First" />
-						<img className="w-[260px] h-[240px] object-top object-cover" src={second} alt="Second" />
+						<img className="w-[260px] h-[360px] object-top object-cover" src={first} loading="lazy" alt="First" />
+						<img className="w-[260px] h-[240px] object-top object-cover" src={second} loading="lazy" alt="Second" />
 					</section>
 					<section className="flex flex-col space-y-4">
-						<img className="w-screen md:w-[260px] md:h-[360px] object-top object-cover" src={third} alt="Third" />
-						<img className="hidden sm:block w-[260px] h-[260px] object-top object-cover" src={fourth} alt="Fourth" />
+						<img className="w-screen md:w-[260px] md:h-[360px] object-top object-cover" src={third} loading="lazy" alt="Third" />
+						<img className="hidden sm:block w-[260px] h-[260px] object-top object-cover" src={fourth} loading="lazy" alt="Fourth" />
 					</section>
 				</figure>
 
