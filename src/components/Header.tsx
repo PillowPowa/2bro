@@ -46,14 +46,16 @@ const HeaderList: FC<HTMLAttributes<HTMLUListElement>> = ({
 
 export const Header: FC = () => {
   return (
-    <header className="sticky top-0 flex justify-between items-center flex-1 z-50 backdrop-blur-[25px]">
-      <h1 className="font-bold text-black uppercase text-[40px]">
-        <b className="text-primary">2</b> bro
+    <header className="sticky top-0 flex justify-between items-center flex-1 z-50 backdrop-blur-[25px] py-1">
+      <h1 className="font-bold text-black uppercase text-[36px]">
+        <b className="text-primary">2</b>
+        <b className="inline-block sm:hidden">B</b> {' '}
+        <b className="hidden sm:inline-block">bro</b>
       </h1>
 
       <HeaderList className="hidden lg:block"/>
 
-      <section className="flex space-x-4 sm:space-x-[60px]">
+      <section className="flex space-x-4 xl:space-x-[40px]">
         <div className="p-2 bg-primary">
           <img src={behance} loading="eager" alt="Behance" />
         </div>

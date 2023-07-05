@@ -24,6 +24,9 @@ module.exports = {
       padding: {
         "wrapper-lg": "80px",
       },
+      minHeight: {
+        "screen-wrapper": "calc(100vh - 80px - 40px)"
+      },
       height: {
         "screen-wrapper": "calc(100vh - 80px - 40px)"
       },

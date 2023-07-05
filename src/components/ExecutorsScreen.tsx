@@ -34,9 +34,9 @@ export const ExecutorsScreen: FC = () => {
         in the field of design in one place
       </HeadingWithDesc>
 
-      <article className="max-w-full overflow-x-auto flex flex-col sm:flex-row gap-8 justify-between">
+      <article className="max-w-full overflow-x-auto flex flex-col md:flex-row gap-8 justify-between">
         {TEAM.map((person) => (
-          <figure key={person.name} className="w-full sm:w-[300px]">
+          <figure key={person.name} className="w-full md:w-[300px]">
             <img
               className="w-full h-auto"
               loading="lazy"

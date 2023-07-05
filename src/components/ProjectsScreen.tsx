@@ -34,11 +34,11 @@ export const ProjectsScreen: FC = () => {
 
       <article className="flex flex-col gap-[40px] md:gap-[100px]">
         {PROJECTS.map((project, index) => (
-          <figure className="flex flex-row md:flex-col gap-2 md:gap-12 h-[220px] sm:h-[360px] items-end md:items-start md:justify-end relative sm:static z-10 p-2 md:p-0">
+          <figure className="flex flex-row xl:flex-col gap-2 md:gap-12 h-[220px] sm:h-[360px] items-end lg:items-end xl:items-start md:justify-end relative sm:static z-10 p-2 md:p-0">
             <h2 className="text-primary font-medium text-lg">
               {index.toString().padStart(2, "0")}
             </h2>
-            <p className="mb-0.5 text-gray md:text-black uppercase">{project.name}</p>
+            <p className="mb-0.5 text-gray xl:text-black uppercase">{project.name}</p>
             <img
               className="absolute right-0 w-full md:w-[970px] h-[180px] sm:h-[360px] -z-10 object-cover object-top"
               loading="lazy"

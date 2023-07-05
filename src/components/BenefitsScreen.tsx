@@ -17,23 +17,23 @@ export const BenefitsScreen: FC = () => {
       </HeadingWithDesc>
 
       <img
-        className="left-0 w-auto md:w-[670px] h-[460px] object-cover object-top"
+        className="left-0 w-full md:w-[670px] h-[460px] object-cover object-top"
         loading="lazy"
         src={mainImg}
         alt="Benefits Image"
       />
 
       <article className={cn(
-        "absolute p-[32px] lg:p-[96px] w-full lg:w-[780px] h-fit sm:h-[240px] lg:h-[360px]",
+        "absolute p-[32px] lg:p-[96px] w-full md:w-[570px] lg:w-[780px] h-fit md:h-[240px] lg:h-[360px]",
         "right-0 backdrop-blur-[25px] bg-gray-rgba z-10 -translate-y-[80%]",
-        "flex justify-between text-black lowercase flex-wrap gap-8"
+        "flex justify-between text-black lowercase flex-wrap gap-6"
       )}>
         <section className="flex flex-col justify-between text-black">
           <div className="p-4 bg-black w-fit">
             <img src={detailsImg} loading="lazy" alt="Details" />
           </div>
           <h2 className="my-2 text-sm sm:text-base">Guarantee for projects</h2>
-          <span className="sm:max-w-[240px] text-xs sm:text-sm">
+          <span className="md:max-w-[240px] text-xs sm:text-sm">
             We were the first to introduce guarantees that will help you to be
             100% sure of the result
           </span>
@@ -44,7 +44,7 @@ export const BenefitsScreen: FC = () => {
             <img src={detailsImg} loading="lazy" alt="Details" />
           </div>
           <h2 className="my-2 text-sm sm:text-base">Verification of contractors</h2>
-          <span className="sm:max-w-[240px] text-xs sm:text-sm">
+          <span className="md:max-w-[240px] text-xs sm:text-sm">
             We were the first to introduce guarantees that will help you to be
             100% sure of the result
           </span>

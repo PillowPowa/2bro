@@ -16,7 +16,7 @@ export const HeadingWithDesc: FC<PropsWithChildren<HeadingWithDescProps>> = ({
     <div className={cn("flex flex-col sm:flex-row sm:justify-between items-center sm:gap-4 my-[40px]", className)} {...props}>
       <Heading>{heading}</Heading>
 
-      <span className="max-h-max w-[280px] text-gray lowercase text-center sm:text-left">
+      <span className="max-h-max w-[220px] sm:max-w-[360px] text-gray lowercase text-center sm:text-left text-sm lg:text-base">
         {children}
       </span>
     </div>

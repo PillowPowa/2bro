@@ -17,8 +17,8 @@ export const Heading: FC<HeadingProps> = ({
       className={cn(
         "text-black lowercase",
         {
-          "text-[55px] sm:text-[80px] xl:text-[120px]": size === "lg",
-          "text-3xl md:text-6xl xl:text-[80px]": size === "base",
+          "text-4xl md:text-6xl xl:text-[120px]": size === "lg",
+          "text-2xl md:text-4xl xl:text-[80px]": size === "base",
         },
         className
       )}
