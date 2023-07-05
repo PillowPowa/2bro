@@ -3,18 +3,43 @@ import cn from "clsx";
 
 import behance from "../assets/images/behance.svg";
 import instagram from "../assets/images/instagram.svg";
+import { slugify, unslugify } from "../util/Util";
+import { useScrollToElement } from "../hooks/useScroll";
 
-export const HeaderList: FC<HTMLAttributes<HTMLUListElement>> = ({
+interface HeaderListItemProps extends HTMLAttributes<HTMLLIElement> {
+  children: string;
+}
+
+const HeaderListItem: FC<HeaderListItemProps> = ({
+  children,
+  className,
+  ...props
+}) => {
+  const {hash} = useScrollToElement();
+  const isActive = unslugify(hash.slice(1)) === children;
+  
+  return (
+    <li className={cn(
+      "inline ml-[50px] cursor-pointer transition-all hover:text-black lowercase", {
+        "text-black": isActive,
+      }
+    )} {...props}>
+      <a href={`#${slugify(children)}`}>{children}</a>
+    </li>
+  )
+}
+
+const HeaderList: FC<HTMLAttributes<HTMLUListElement>> = ({
   className,
   ...props
 }) => {
   return (
-    <ul className={cn("text-gray cursor-pointer", className)} {...props}>
-      <li className="inline ml-[50px]">about us</li>
-      <li className="inline ml-[50px]">projects</li>
-      <li className="inline ml-[50px]">feaures</li>
-      <li className="inline ml-[50px]">team</li>
-      <li className="inline ml-[50px]">contacts</li>
+    <ul className={cn("text-gray", className)} {...props}>
+      <HeaderListItem>About Us</HeaderListItem>
+      <HeaderListItem>Projects</HeaderListItem>
+      <HeaderListItem>Benefits</HeaderListItem>
+      <HeaderListItem>Team</HeaderListItem>
+      <HeaderListItem>Contacts</HeaderListItem>
     </ul>
   );
 };

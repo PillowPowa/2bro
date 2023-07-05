@@ -9,7 +9,7 @@ import detailsImg from "../assets/images/details.svg";
 
 export const BenefitsScreen: FC = () => {
   return (
-    <section className="relative pt-[128px]">
+    <section id="benefits" className="relative pt-[128px]">
       <Paragraph>Why us?</Paragraph>
       <HeadingWithDesc heading="Benefits">
         We are more than just a bureau, which can be understood by looking at

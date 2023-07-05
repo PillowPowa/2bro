@@ -6,7 +6,7 @@ import { Heading } from "./ui/Heading";
 
 export const AboutUsScreen: FC = () => {
   return (
-    <section className="flex justify-between pt-[64px] relative sm:static">
+    <section id="about-us" className="flex justify-between pt-[64px] relative sm:static">
       <article className="z-10">
         <Paragraph>Facts about buro</Paragraph>
         <Heading className="my-4 sm:my-[40px] text-center sm:text-left">
@@ -57,6 +57,7 @@ export const AboutUsScreen: FC = () => {
 		
         <img
           className="hidden sm:absolute right-0 w-[630px] h-auto -z-10 -translate-y-[120%] lg:-translate-y-[100%]"
+		  loading="lazy"
           src={mainImg}
           alt="Main Image"
         />

@@ -26,7 +26,7 @@ const TEAM = [
 
 export const ExecutorsScreen: FC = () => {
   return (
-    <section className="py-[64px]">
+    <section id="team" className="py-[64px]">
       <Paragraph>Our Executors</Paragraph>
 
       <HeadingWithDesc heading="Team">

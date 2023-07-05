@@ -5,7 +5,7 @@ import * as imgs from "../assets/images/clients";
 
 export const ClientsScreen: FC = () => {
   return (
-    <section className="pt-[128px]">
+    <section id="clients" className="pt-[128px]">
       <Paragraph>Why us?</Paragraph>
 
       <HeadingWithDesc heading="Clients">

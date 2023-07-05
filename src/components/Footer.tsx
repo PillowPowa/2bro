@@ -6,7 +6,7 @@ import mail from "../assets/images/mail.svg";
 
 export const Footer = () => {
   return (
-    <footer className="absolute left-0 w-full px-4 md:px-[100px] xl:px-[270px] py-[32px] sm:py-[64px] bg-black flex flex-col justify-center">
+    <footer id="contacts" className="absolute left-0 w-full px-4 md:px-[100px] xl:px-[270px] py-[32px] sm:py-[64px] bg-black flex flex-col justify-center">
       <Paragraph className="text-white">We are in touch</Paragraph>
 
       <section className="flex flex-col md:flex-row justify-between md:items-center">
