@@ -38,7 +38,7 @@ export const ProjectsScreen: FC = () => {
             <h2 className="text-primary font-medium text-lg">
               {index.toString().padStart(2, "0")}
             </h2>
-            <p className="text-gray md:text-black uppercase">{project.name}</p>
+            <p className="mb-0.5 text-gray md:text-black uppercase">{project.name}</p>
             <img
               className="absolute right-0 w-full md:w-[970px] h-[180px] sm:h-[360px] -z-10 object-cover object-top"
               src={project.src}

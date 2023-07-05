@@ -28,7 +28,7 @@ export const Header: FC = () => {
 
       <HeaderList className="hidden lg:block"/>
 
-      <section className="flex space-x-[60px]">
+      <section className="flex space-x-4 sm:space-x-[60px]">
         <div className="p-2 bg-primary">
           <img src={behance} alt="Behance" />
         </div>
