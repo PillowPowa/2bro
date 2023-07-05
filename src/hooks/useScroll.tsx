@@ -5,6 +5,7 @@ export const useScrollToElement = () => {
 
   useEffect(() => {
     const scrollToElement = () => {
+      if (!hash) return;
       const element = document.querySelector(hash);
 
       if (element) {
@@ -25,5 +26,5 @@ export const useScrollToElement = () => {
     };
   }, [hash]);
 
-  return {hash};
+  return { hash };
 };
