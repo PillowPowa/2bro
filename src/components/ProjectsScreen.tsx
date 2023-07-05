@@ -25,7 +25,7 @@ const PROJECTS = [
 
 export const ProjectsScreen: FC = () => {
   return (
-    <section id="projects" className="pt-[64px]">
+    <section id="projects" className="pt-[64px] xl:pt-[128px]">
       <Paragraph>Our pride</Paragraph>
 
       <HeadingWithDesc heading="Our pride">

@@ -3,6 +3,8 @@ import cn from "clsx";
 
 import behance from "../assets/images/behance.svg";
 import instagram from "../assets/images/instagram.svg";
+
+import { Wrapper } from "./ui/Wrapper";
 import { slugify, unslugify } from "../util/Util";
 import { useScrollToElement } from "../hooks/useScroll";
 
@@ -46,7 +48,7 @@ const HeaderList: FC<HTMLAttributes<HTMLUListElement>> = ({
 
 export const Header: FC = () => {
   return (
-    <header className="sticky top-0 flex justify-between items-center flex-1 z-50 backdrop-blur-[25px] py-1">
+    <Wrapper className="sticky top-0 flex justify-between items-center flex-1 z-50 py-1 backdrop-blur-[25px]">
       <h1 className="font-bold text-black uppercase text-[36px]">
         <b className="text-primary">2</b>
         <b className="inline-block sm:hidden">B</b> {' '}
@@ -63,6 +65,6 @@ export const Header: FC = () => {
           <img src={instagram} loading="eager" alt="Instagram" />
         </div>
       </section>
-    </header>
+    </Wrapper>
   );
 };

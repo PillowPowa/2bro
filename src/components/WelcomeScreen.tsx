@@ -12,14 +12,14 @@ import fourth from "../assets/images/welcome/2-2.png";
 export const WelcomeScreen: FC = () => {
 	return (
 		<section className="py-4 sm:py-[64px] md:min-h-screen-wrapper md:h-screen-wrapper">
-			<article className="flex flex-col justify-between gap-8 h-full z-10 relative">
+			<article className="flex flex-col justify-between gap-4 h-full z-10 relative">
 				<Paragraph>Design Bureau</Paragraph>
 
-				<Heading size="base" className="max-w-[880px] shrink-0 sm:my-[40px] text-left">
+				<Heading size="base" className="max-w-[880px] sm:my-[40px] text-left">
 					The interior of your dreams is already here!
 				</Heading>
 
-				<figure className="md:absolute top-8 right-0 h-full w-full flex gap-4 sm:items-end sm:justify-end -z-10">
+				<figure className="md:absolute top-0 right-0 h-full w-full flex gap-4 sm:items-end sm:justify-end -z-10">
 					<section className="hidden lg:flex flex-col space-y-4">
 						<img className="w-[260px] h-[360px] object-top object-cover" src={first} loading="lazy" alt="First" />
 						<img className="w-[260px] h-[240px] object-top object-cover" src={second} loading="lazy" alt="Second" />

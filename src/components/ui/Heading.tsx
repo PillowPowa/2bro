@@ -18,7 +18,7 @@ export const Heading: FC<HeadingProps> = ({
         "text-black lowercase",
         {
           "text-4xl md:text-6xl xl:text-[120px]": size === "lg",
-          "text-2xl md:text-4xl xl:text-[80px]": size === "base",
+          "text-2xl xl:text-[100px]": size === "base",
         },
         className
       )}

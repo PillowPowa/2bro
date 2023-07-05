@@ -1,12 +1,13 @@
 import { Paragraph } from "./ui/Paragraph";
 import { Heading } from "./ui/Heading";
+import { Wrapper } from "./ui/Wrapper";
 
 import location from "../assets/images/location.svg";
 import mail from "../assets/images/mail.svg";
 
 export const Footer = () => {
   return (
-    <footer id="contacts" className="absolute left-0 w-full px-4 sm:px-[120px] md:px-[100px] xl:px-[170px] 2xl:px-[240px] py-4 md:py-[64px] bg-black flex flex-col justify-center">
+    <Wrapper id="contacts" className="absolute left-0 w-full py-4 md:py-[64px] bg-black flex flex-col justify-center">
       <Paragraph className="text-white">We are in touch</Paragraph>
 
       <section className="flex flex-col md:flex-row justify-between md:items-center">
@@ -26,6 +27,6 @@ export const Footer = () => {
           </div>
         </span>
       </section>
-    </footer>
+    </Wrapper>
   );
 };
