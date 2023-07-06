@@ -8,6 +8,9 @@ import julyanskaImg from "../assets/images/projects/3.png";
 
 import projectsImg from "../assets/images/projects.svg";
 
+import { motion } from "framer-motion";
+import { whileInViewState } from "../assets/animations";
+
 const PROJECTS = [
   {
     name: "Reitarska",
@@ -25,7 +28,11 @@ const PROJECTS = [
 
 export const ProjectsScreen: FC = () => {
   return (
-    <section id="projects" className="pt-[64px] xl:pt-[128px]">
+    <motion.section
+      id="projects"
+      {...whileInViewState}
+      className="pt-[64px] xl:pt-[128px]"
+    >
       <Paragraph>Our pride</Paragraph>
 
       <HeadingWithDesc heading="Our pride">
@@ -38,7 +45,9 @@ export const ProjectsScreen: FC = () => {
             <h2 className="text-primary font-medium text-lg">
               {index.toString().padStart(2, "0")}
             </h2>
-            <p className="mb-0.5 text-gray xl:text-black uppercase">{project.name}</p>
+            <p className="mb-0.5 text-gray xl:text-black uppercase">
+              {project.name}
+            </p>
             <img
               className="absolute right-0 w-full md:w-[970px] h-[180px] sm:h-[360px] -z-10 object-cover object-top"
               loading="lazy"
@@ -55,6 +64,6 @@ export const ProjectsScreen: FC = () => {
         src={projectsImg}
         alt="Project"
       />
-    </section>
+    </motion.section>
   );
 };

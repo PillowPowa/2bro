@@ -4,8 +4,10 @@ import { HeadingWithDesc } from "./ui/HeadingWithDesc";
 
 import * as imgs from "../assets/images/team";
 
-const SRCS = Object.values(imgs);
+import { motion } from "framer-motion";
+import { whileInViewState } from "../assets/animations";
 
+const SRCS = Object.values(imgs);
 const TEAM = [
   {
     avatarURL: SRCS[0],
@@ -26,7 +28,7 @@ const TEAM = [
 
 export const ExecutorsScreen: FC = () => {
   return (
-    <section id="team" className="py-[64px]">
+    <motion.section id="team" {...whileInViewState} className="py-[64px]">
       <Paragraph>Our Executors</Paragraph>
 
       <HeadingWithDesc heading="Team">
@@ -53,6 +55,6 @@ export const ExecutorsScreen: FC = () => {
           </figure>
         ))}
       </article>
-    </section>
+    </motion.section>
   );
 };

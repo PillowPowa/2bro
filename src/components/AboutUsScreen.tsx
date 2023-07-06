@@ -1,13 +1,16 @@
 import type { FC } from "react";
 import { Paragraph } from "./ui/Paragraph";
-
-import mainImg from "../assets/images/about-us/1.png";
 import { Heading } from "./ui/Heading";
+import mainImg from "../assets/images/about-us/1.png";
+
+import { motion } from "framer-motion";
+import { whileInViewState } from "../assets/animations";
 
 export const AboutUsScreen: FC = () => {
   return (
-    <section
+    <motion.section
       id="about-us"
+      {...whileInViewState}
       className="flex justify-between pt-[64px] relative sm:static w-full"
     >
       <article className="z-10">
@@ -64,6 +67,6 @@ export const AboutUsScreen: FC = () => {
           alt="Main Image"
         />
       </article>
-    </section>
+    </motion.section>
   );
 };

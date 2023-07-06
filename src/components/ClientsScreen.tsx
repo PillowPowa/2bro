@@ -3,9 +3,12 @@ import { Paragraph } from "./ui/Paragraph";
 import { HeadingWithDesc } from "./ui/HeadingWithDesc";
 import * as imgs from "../assets/images/clients";
 
+import { motion } from "framer-motion";
+import { whileInViewState } from "../assets/animations";
+
 export const ClientsScreen: FC = () => {
   return (
-    <section id="clients" className="pt-[128px]">
+    <motion.section id="clients" {...whileInViewState} className="pt-[128px]">
       <Paragraph>Why us?</Paragraph>
 
       <HeadingWithDesc heading="Clients">
@@ -24,6 +27,6 @@ export const ClientsScreen: FC = () => {
           />
         ))}
       </figure>
-    </section>
+    </motion.section>
   );
 };

@@ -58,10 +58,10 @@ export const Header: FC = () => {
       <HeaderList className="hidden lg:block"/>
 
       <section className="flex space-x-4 xl:space-x-[40px]">
-        <div className="p-2 bg-primary">
+        <div className="w-[36px] h-[36px] p-2 bg-primary">
           <img src={behance} loading="eager" alt="Behance" />
         </div>
-        <div className="p-2 bg-primary">
+        <div className="w-[36px] h[36px] p-2 bg-primary">
           <img src={instagram} loading="eager" alt="Instagram" />
         </div>
       </section>

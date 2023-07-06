@@ -15,9 +15,9 @@ export const Heading: FC<HeadingProps> = ({
   return (
     <h1
       className={cn(
-        "text-black lowercase",
+        "text-black lowercase text-4xl md:text-6xl",
         {
-          "text-4xl md:text-6xl xl:text-[120px]": size === "lg",
+          "xl:text-[120px]": size === "lg",
           "text-2xl xl:text-[100px]": size === "base",
         },
         className
