@@ -14,10 +14,10 @@ import { opacityInitialAnimation, whileInViewState } from "../assets/animations"
 
 export const WelcomeScreen: FC = () => {
   return (
-    <section className="py-4 sm:py-[64px] md:min-h-screen-wrapper md:h-screen-wrapper">
+    <section className="py-4 sm:py-[64px] md:min-h-screen-wrapper">
       <motion.article
 		{...whileInViewState}
-        className="flex flex-col justify-between gap-4 h-full z-10 relative"
+        className="flex flex-col justify-between gap-4 md:gap-12 h-full z-10 relative"
       >
         <Paragraph>Design Bureau</Paragraph>
 
