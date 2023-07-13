@@ -2,9 +2,9 @@ import type { FC } from "react";
 import { Paragraph } from "./ui/Paragraph";
 import { HeadingWithDesc } from "./ui/HeadingWithDesc";
 
-import reitarskaImg from "../assets/images/projects/1.png";
-import dragomirovaImg from "../assets/images/projects/2.png";
-import julyanskaImg from "../assets/images/projects/3.png";
+import reitarskaImg from "../assets/images/projects/1.webp";
+import dragomirovaImg from "../assets/images/projects/2.webp";
+import julyanskaImg from "../assets/images/projects/3.webp";
 
 import projectsImg from "../assets/images/projects.svg";
 

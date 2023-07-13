@@ -4,7 +4,7 @@ import { HeadingWithDesc } from "./ui/HeadingWithDesc";
 
 import cn from "clsx";
 
-import mainImg from "../assets/images/benefits/1.png";
+import mainImg from "../assets/images/benefits/1.webp";
 import detailsImg from "../assets/images/details.svg";
 
 import { motion } from "framer-motion";

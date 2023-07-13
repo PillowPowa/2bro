@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { Paragraph } from "./ui/Paragraph";
 import { Heading } from "./ui/Heading";
-import mainImg from "../assets/images/about-us/1.png";
+import mainImg from "../assets/images/about-us/1.webp";
 
 import { motion } from "framer-motion";
 import { whileInViewState } from "../assets/animations";

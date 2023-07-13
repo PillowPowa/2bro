@@ -4,10 +4,10 @@ import { Paragraph } from "./ui/Paragraph";
 import { Button } from "./ui/Button";
 import { Heading } from "./ui/Heading";
 
-import first from "../assets/images/welcome/1-1.png";
-import second from "../assets/images/welcome/1-2.png";
-import third from "../assets/images/welcome/2-1.png";
-import fourth from "../assets/images/welcome/2-2.png";
+import first from "../assets/images/welcome/1-1.webp";
+import second from "../assets/images/welcome/1-2.webp";
+import third from "../assets/images/welcome/2-1.webp";
+import fourth from "../assets/images/welcome/2-2.webp";
 
 import { motion } from "framer-motion";
 import { opacityInitialAnimation, whileInViewState } from "../assets/animations";
